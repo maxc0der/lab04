@@ -1,9 +1,7 @@
-//
-// Created by ubuntu on 27.12.2020.
-//
+// Copyright 2020 Maxim Nasachenko <maximka5406@gmail.com>
 
-#ifndef LAB4_BROKER_HPP
-#define LAB4_BROKER_HPP
+#ifndef INCLUDE_BROKER_HPP_
+#define INCLUDE_BROKER_HPP_
 
 #include <FinFile.hpp>
 #include <map>
@@ -24,4 +22,4 @@ class Broker {
   AccFilesMap accFiles;
 };
 
-#endif  // LAB4_BROKER_HPP
+#endif  // INCLUDE_BROKER_HPP_

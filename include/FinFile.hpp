@@ -1,9 +1,7 @@
-//
-// Created by ubuntu on 18.01.2021.
-//
+// Copyright 2020 Maxim Nasachenko <maximka5406@gmail.com>
 
-#ifndef LAB4_FINFILE_HPP
-#define LAB4_FINFILE_HPP
+#ifndef INCLUDE_FINFILE_HPP_
+#define INCLUDE_FINFILE_HPP_
 #include <string>
 
 class FinFile {
@@ -18,4 +16,4 @@ class FinFile {
   std::string date;
 };
 
-#endif  // LAB4_FINFILE_HPP
+#endif  // INCLUDE_FINFILE_HPP_

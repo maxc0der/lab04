@@ -1,9 +1,17 @@
-//
-// Created by ubuntu on 18.01.2021.
-//
+// Copyright 2020 Maxim Nasachenko <maximka5406@gmail.com>
 
-#ifndef LAB4_INSPECTOR_HPP
-#define LAB4_INSPECTOR_HPP
+#ifndef INCLUDE_INSPECTOR_HPP_
+#define INCLUDE_INSPECTOR_HPP_
+#include <Broker.hpp>
+#include <FinFile.hpp>
+#include <boost/filesystem.hpp>
+#include <string>
+#include <vector>
+
+const int AccountLength = 8;
+const int DateLength = 8;
+const int FilenameTokenCount = 3;
+const char FileType[] = "balance";
 
 class Inspector {
  public:
@@ -12,8 +20,9 @@ class Inspector {
   void PrintResult();
 
  private:
-  std::vector<broker> brokers;
   std::string brokersDirectory;
+  std::vector<Broker> brokers;
+  Broker inspectSingleBroker(const boost::filesystem::path &path);
 };
 
-#endif  // LAB4_INSPECTOR_HPP
+#endif  // INCLUDE_INSPECTOR_HPP_
